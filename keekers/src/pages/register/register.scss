@@ -1,0 +1,79 @@
+.register {
+    height: 100vh;
+    background-color: rgba(29, 151, 4, 0.425);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        .card{
+            width: 50%;
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: white;
+            border-radius: 10px;
+            min-height: 600px;
+            overflow: hidden;
+            .left{
+                flex: 1;
+                background: linear-gradient(rgba(0, 128, 0, 0.986), rgba(0, 0, 0, 0.692)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwDfjN0Mv7l_bw0PxBj4P9wSHMN75ZkgAP9g&usqp=CAU) center;
+                background-size: cover;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                color: white;
+                h1{
+                    font-size: 100px;
+                    line-height: 100px;
+                }
+                p{
+                    font-weight: bold;
+                }
+                span{
+                    font-size: 12px
+                }
+                button{
+                    width: 50%;
+                    padding: 10px;
+                    border: none;
+                    background-color: white;
+                    color: darkgreen;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+    
+            .right{
+                flex: 1;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                justify-content: center;
+                h1{
+                    color: darkgreen;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                    input{
+                        border: none;
+                        border-bottom: 1px solid darkgreen;
+                        padding: 20px 10px;
+    
+                    }
+                    button{
+                        width: 50%;
+                        padding: 10px;
+                        border: none;
+                        background-color: darkgreen;
+                        color: white;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+            }
+    
+        }
+    
+    }
