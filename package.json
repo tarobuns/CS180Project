@@ -1,0 +1,27 @@
+{
+  "name": "project-cs180",
+  "version": "1.0.0",
+  "description": "Web app that is social media",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarobuns/project-cs180.git"
+  },
+  "keywords": [
+    "social-media",
+    "web-app",
+    "firebase"
+  ],
+  "author": "CS180-TeamTypeShip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarobuns/project-cs180/issues"
+  },
+  "homepage": "https://github.com/tarobuns/project-cs180#readme",
+  "dependencies": {
+    "firebase": "^10.8.0"
+  }
+}
