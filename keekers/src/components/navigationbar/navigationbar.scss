@@ -1,0 +1,68 @@
+.Navigationbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 50px;
+    border-bottom: 5px solid darkgreen;
+
+    //used for overlay effect
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+
+    .left{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        span{
+            font-weight: bold;
+            font-style: italic;
+            font-size: 50px;
+            color: darkgreen;
+
+        }
+    }
+    .middle{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .search{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid darkgreen;
+            border-radius: 1px;
+            padding: px;
+            input{
+                background-color: whitesmoke;
+                border: none;
+                width: 500px;
+            }
+        }
+        span{
+            
+        }
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-weight: 500;
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 10px ;
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+
+            }
+            span{
+
+            }
+        }
+    }
+}

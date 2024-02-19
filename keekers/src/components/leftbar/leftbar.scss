@@ -1,0 +1,46 @@
+.leftbar{
+    flex: 2;
+    position: sticky;
+    top: 75px;
+    height: calc(100vh - 75px);
+    background-color: whitesmoke;
+
+    .container{
+        padding: 20px;
+
+    hr{ //thin little separation bar
+        margin: 20px 0px;
+        border: none;
+        height: 1px;
+        background-color: darkgreen;
+    }
+
+        .menu{ //left room for more menu items
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                span{
+
+                }
+            }
+            .follower{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                span{
+
+                }
+            }
+        }
+    }
+}
