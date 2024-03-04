@@ -1,0 +1,79 @@
+.profile{
+    position: relative;
+    z-index: -1; //used to make sure everything appears beneath the bars
+
+    .images{
+        width: 100%;
+        height: 300px;
+        position: relative;
+
+        .cover{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profilePicture{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            //putting profile pic between cover photo and bio plate
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 200px;
+            margin: auto;
+        }
+    }
+
+
+    .profileContainer{
+        padding: 20px 70px;
+        .userInformation{
+            height: 180px;
+            -webkit-box-shadpw: 0px 0px 10px 1px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+            box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+            border-radius: 20px;
+            background-color: rgb(34, 34, 34);
+            color: white;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+
+            .center{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                span{
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                .info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    span{
+                        font-style: 12px;
+                    }
+                }
+
+                button{
+                    border: none;
+                    background-color: darkgreen;
+                    color: white;
+                    padding: 10px;
+                    cursor: pointer;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+
+}

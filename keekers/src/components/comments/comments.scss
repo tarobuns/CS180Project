@@ -1,0 +1,59 @@
+.comments{
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .write{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px 0px;
+
+        input{
+            width: 100%;
+            padding: 10px;
+            border: 3px solid darkgreen;
+            background-color: transparent;
+            color: darkgreen;
+        }
+
+        button{
+            border: none;
+            background-color: darkgreen;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    }
+
+    .comment{
+        margin: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        .info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            align-items: flex-start;
+            
+            span{
+                font-weight: 500;
+            }
+
+            p{
+                color: white;
+            }
+
+        
+        }
+
+    }
+}

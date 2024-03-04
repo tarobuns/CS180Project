@@ -5,9 +5,13 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'; //for unlik
 import CommentIcon from '@mui/icons-material/Comment'; //for comment
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz'; //for "more" if we have time
 import { Link } from "react-router-dom";
+import Comments from "../comments/Comments";
+import { useState } from "react";
 
 
 const Post = ({post}) => {
+  
+  const [commentOpen, setCommentOpen] = useState(false)
 
   const isLiked = false; //temporary, need to connect onClick w back end
 
@@ -35,11 +39,12 @@ const Post = ({post}) => {
                     {isLiked  ? <FavoriteIcon/>: <FavoriteBorderIcon/>}
                     8 likes
                 </div>
-                <div className="item">
+                <div className="item" onClick={()=>setCommentOpen(!commentOpen)}>
                     <CommentIcon/>
                     2 Comments
                 </div>
             </div>
+            {commentOpen && <Comments/>}
         </div>
     </div>
   );
