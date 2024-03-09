@@ -14,6 +14,7 @@ import Profile from "./pages/profile/Profile";
 import NavigationBar from "./components/navigationbar/NavigationBar";
 import LeftBar from "./components/leftbar/LeftBar";
 import RightBar from "./components/rightbar/RightBar";
+import Settings from "./pages/settings/Settings";
 
 function App() {
 
@@ -62,6 +63,10 @@ function App() {
         {
           path:"/profile/:id",
           element:<Profile/>
+        },
+        {
+          path:"/settings",
+          element: <Settings />,
         },
       ]
     },

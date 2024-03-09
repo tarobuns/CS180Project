@@ -1,6 +1,15 @@
 import "./profile.scss"
 import Posts from "../../components/posts/Posts"
+import { useNavigate } from "react-router-dom"
+
 const Profile = () => {
+    const navigate = useNavigate();
+    
+    const handleGearClick = () => {
+      console.log("Gear icon clicked");
+      navigate("/settings");
+    }
+  
   return (
     <div className="profile">
       <div className="images">
@@ -21,6 +30,9 @@ const Profile = () => {
             <button>Follow</button>
           </div>
         </div>
+        <button className="gearButton" onClick={handleGearClick}>
+        <div className="gearIcon"></div>
+        </button>
         <Posts/>
       </div>
       
