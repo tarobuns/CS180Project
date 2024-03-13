@@ -17,15 +17,19 @@ import RightBar from "./components/rightbar/RightBar";
 import Settings from "./pages/settings/Settings";
 import { useContext } from "react";
 import { AuthContext } from "./context/authContext";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 function App() {
 
   const {currentUser} = useContext(AuthContext);
 
+  const queryClient = new QueryClient(); // For posting
+
   //with this layout, the user will continue to have the left and right bars
   // on the screen when switching between home page and profile page
   const Layout = () => {
     return (
+      <QueryClientProvider client={queryClient}>
       <div>
         <NavigationBar/>
         <div style={{display: "flex" }}>
@@ -36,6 +40,7 @@ function App() {
           <RightBar/>
         </div>
       </div>
+      </QueryClientProvider>
     );
   };
 

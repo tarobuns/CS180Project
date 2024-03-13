@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../context/authContext";
 
 const Login = () => {
-    const [inputs, setInputs] = useState({
+    const [inputs, setInputs] = useState({ // User logs in through their passsword and username.
       username: "",
       password: "",
     });

@@ -4,7 +4,7 @@ export const insertComment = ( req, res)=>{
 
     const q = "INSERT INTO comments(`desc`, `createdAt`, `userId`, `postId`) VALUES(?)";
     
-    const values = [req.body.desc, Date.now(), req.body.userId, req.body.postId];
+    const values = [req.body.desc, Date.now(), req.body.id, req.body.postId];
 
     db.query(q, [values], (err,data)=>{
         if (err) return res.status(500).json(err);

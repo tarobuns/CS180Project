@@ -9,16 +9,14 @@ import authRoutes from "./routes/auth.js";
 
 const app = express();
 
-// Set up CORS middleware with the correct configuration
 app.use(cors({
-    origin: "http://localhost:3000", // This should match the domain of your front-end app
-    credentials: true, // This will allow sending of cookies and authorization headers with the request
+    origin: "http://localhost:3000", //connect to it using cors and set to true
+    credentials: true, 
 }));
 
-// Parse cookies from the HTTP Request
+
 app.use(cookieParser());
 
-// Parse JSON payloads
 app.use(express.json());
 
 // Define your routes
