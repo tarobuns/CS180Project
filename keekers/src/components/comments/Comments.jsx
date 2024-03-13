@@ -28,15 +28,16 @@ const Comments = () => {
                 <input type="text" placeholder="Leave a Comment" />
                 <button>Send</button>
             </div>
-            {comments.map(comment=>(
-                <div className="comment">
-                    <img src={comment.profilePicture} alt="" />
-                    <div className="info">
-                        <span>{comment.name}</span>
-                        <p>{comment.description}</p>
-                    </div>
-                </div>
-            ))}
+            {comments.map(comment => (
+    <div className="comment" key={comment.id}> {/* prop key goes here */}
+        <img src={comment.profilePicture} alt="" />
+        <div className="info">
+            <span>{comment.name}</span>
+            <p>{comment.description}</p>
+        </div>
+    </div>
+))}
+
         </div>
     )
 }
