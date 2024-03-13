@@ -15,10 +15,12 @@ import NavigationBar from "./components/navigationbar/NavigationBar";
 import LeftBar from "./components/leftbar/LeftBar";
 import RightBar from "./components/rightbar/RightBar";
 import Settings from "./pages/settings/Settings";
+import { useContext } from "react";
+import { AuthContext } from "./context/authContext";
 
 function App() {
 
-  const currentUser = true;
+  const {currentUser} = useContext(AuthContext);
 
   //with this layout, the user will continue to have the left and right bars
   // on the screen when switching between home page and profile page

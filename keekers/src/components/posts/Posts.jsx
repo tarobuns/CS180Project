@@ -6,6 +6,7 @@ const Posts = () => {
     //Temporary data 
     // Need back-end
 
+    
     const posts = [
         {
             id: 1,
@@ -27,7 +28,7 @@ const Posts = () => {
             image: "https://qph.cf2.quoracdn.net/main-qimg-da5fe9a79977ebd07984db95a5709a4b.webp",
         },
     ];
-
+    
     return <div className="posts">
         {posts.map(post=>(
             <Post post={post} key={post.id}/>
