@@ -5,9 +5,12 @@ import NightsStayIcon from '@mui/icons-material/NightsStay'; //for Dark Mode Ico
 import SearchIcon from '@mui/icons-material/Search'; //for userSearch
 import PersonIcon from '@mui/icons-material/Person'; //for userProfile
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../context/authContext";
 
 
 const NavigationBar = () => {
+    const { currentUser } = useContext(AuthContext);
   return (
     <div className="Navigationbar">
         <div className="left">
@@ -26,8 +29,8 @@ const NavigationBar = () => {
         <div className="right">
             <PersonIcon/>
             <div className="user"> 
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/009/303/117/small/cat-paw-clipart-design-illustration-free-png.png" alt=""/>
-                <span>Jane Doe</span>
+                <img src={currentUser.profilePicure} alt=""/>
+                <span>{currentUser.name}</span>
             </div>
         </div>
     </div>

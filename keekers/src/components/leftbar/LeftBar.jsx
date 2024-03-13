@@ -1,16 +1,19 @@
+import { useContext } from "react";
 import "./leftbar.scss"
 import GroupIcon from '@mui/icons-material/Group';
+import { AuthContext } from "../../context/authContext";
 
 const LeftBar = () => {
+    const { currentUser } = useContext(AuthContext);
   return (
     <div className="leftbar">
         <div className="container">
             <div className="menu">
                 <div className="user">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/009/303/117/small/cat-paw-clipart-design-illustration-free-png.png"
+                    <img src={currentUser.profilePicture}
                         alt=""
                     />
-                    <span>Jane Doe</span>
+                    <span>{currentUser.name}</span>
                 </div>
                 <div className="follower">
                     <GroupIcon/>
